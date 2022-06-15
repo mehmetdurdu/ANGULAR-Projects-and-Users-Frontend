@@ -1,0 +1,40 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Proje Ekle</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="projectAddForm">
+          <div class="mb-3">
+            <label for="projectName">Proje Adı</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="projectName"
+                formControlName="projectName"
+                class="form-control"
+                placeholder="Proje Adı"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="categoryId">Kategori</label>
+            <div class="form-group">
+              <input
+                type="number"
+                id="categoryId"
+                formControlName="categoryId"
+                class="form-control"
+                placeholder="Kategori"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+      </div>
+    </div>
+  </div>
+</div>
